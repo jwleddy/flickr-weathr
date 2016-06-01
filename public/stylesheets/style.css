@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Roboto;
 }
 
-a {
-  color: #00B7FF;
+#image-display {
+  margin: 100px auto;
+  height:400px;
+  width: 400px
+}
+
+.display-side {
+  height:400px;
+  width:400px;
+  padding:20px;
+  text-align:center;
+}
+
+.front {
+
+}
+
+.back {
 }
