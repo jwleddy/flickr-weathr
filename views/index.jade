@@ -1,17 +1,33 @@
 extends layout
 
 block scripts
-  script(type="text/javascript" src="/javascripts/jquery-2.2.4.min.js")
-  script(type="text/javascript" src="/javascripts/jquery.flip.min.js")
+  script(type="text/javascript" src="/javascripts/vendors/jquery-2.2.4.min.js")
+  script(type="text/javascript" src="/javascripts/vendors/jquery-ui.min.js")
+  script(type="text/javascript" src="/javascripts/vendors/jquery.flip.min.js")
+  script(type="text/javascript" src="/javascripts/vendors/semantic.min.js")
+  script(type="text/javascript" src="/javascripts/settings.js")
+  script(type="text/javascript" src="/javascripts/components.js")
+  script(type="text/javascript" src="/javascripts/errors.js")
+  script(type="text/javascript" src="/javascripts/dropdown.js")
+  script(type="text/javascript" src="/javascripts/flickr-weather.js")
   script(type="text/javascript" src="/javascripts/application.js")
 
 block content
-  .row
-    form.col.s12
-      .input-field.col.s6
-        input(name="city" type="text")
-      .input-field.col.s6
-        input(type="submit").waves-effect.waves-light.btn
-  #image-display
-    .front.display-side.green.accent-2 Hello
-    .back.display-side.light-blue.accent-2 Goodbye
+
+
+  .row.container
+    .col.s4
+      .ui.fluid.search.selection.dropdown
+        input(type="hidden" name="country" data-wu-key="#{wuKey}" data-flickr-key="#{flickrKey}")
+        i.dropdown.icon
+        .default.text Select Country
+        .menu
+  #display
+    .front.display-side.teal.accent-1.z-depth-2
+      img.flickr-image.z-depth-1
+      h4
+      p
+    .back.display-side.teal.accent-1.z-depth-2
+      img.flickr-image.z-depth-1
+      h4
+      p

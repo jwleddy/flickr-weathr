@@ -2,15 +2,17 @@ body {
   font-family: Roboto;
 }
 
-#image-display {
+#display {
   margin: 100px auto;
-  height:400px;
-  width: 400px
+  height:500px;
+  width: 700px
 }
 
+
+
 .display-side {
-  height:400px;
-  width:400px;
+  height:500px;
+  width:700px;
   padding:20px;
   text-align:center;
 }
@@ -20,4 +22,15 @@ body {
 }
 
 .back {
+}
+img.flickr-image {
+  width: 95%;
+}
+#select1 {
+  width:200px
+  height:200px;
+}
+
+.ui.dropdown {
+  margin: 30px;
 }
