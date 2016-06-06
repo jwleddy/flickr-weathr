@@ -39,10 +39,8 @@ var flickrWeather = (function(city,obj) {
           }
           // Add image to display
           var image = components.addImage(photoUrl);
-          // Flip it when it's ready
-          image.load(function imageReady() {
+          // Flip it
             $('#display').flip('toggle');
-          });
 
       }, errors.image);
     }, errors.place);
